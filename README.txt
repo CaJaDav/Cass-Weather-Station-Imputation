@@ -1,6 +1,11 @@
-This is a complete database for all the resources I have collected from NIWA, ECan and the University weather stations.
+
 
 ------------------------------------------------- DESCRIPTION OF DIRECTORIES --------------------------------------------
+IMPORTANT NOTE: The datasets are obviously not on github, you can instead find them here:
+	------------->    https://www.dropbox.com/sh/18ot58f3c1y17b6/AABXi-86iaVquIZSM4y2B_SVa?dl=0   <------------
+This is a complete database for all the resources I have collected from NIWA, ECan and the University weather stations. 
+The following directories must be copied and unzipped into the same directory as the notebooks.
+
 - Raw_Data:
 
 	This contains the 'raw' files in their (mostly) original formatting. These have been minimally altered by myself 
@@ -21,10 +26,21 @@ physically feasible range.
 	This is a special directory contained data that has been curated by hand to remove obviously spurious, but hard
 to contain data. 
 
-- SUGGESTED USE:
+- Imputations: 
+
+	These are the imputations produced by the rain and temperature models
+
+Notes on SUGGESTED USE:
 
 Generally, the formatted datasets can be used for most of the data provided by NIWA or ECan. Filtered datasets, or cleaned
 datasets are strongly recommended for Chilton and Cass due to the high amount of bad data.
+
+
+-------------------------------------- PYTHON NOTEBOOKS AND CODE FOR IMPUTATIONS -----------------------------------------
+
+The Rain and Temp notebooks contain two example models for rain and temperature imputations. The database utils is a 
+rather messy library containing rough-and-ready functions we have made over the course of this project.
+
 
 ------------------------------------ COLUMN DICTIONARIES AND FORMATTING NOTEBOOKS-----------------------------------------
 
